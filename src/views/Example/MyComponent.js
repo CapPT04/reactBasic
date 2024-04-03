@@ -14,11 +14,15 @@ class MyComponent extends React.Component {
         })
     }
 
+    handleClickButton = () => {
+        alert('click me')
+    }
+
     render() {
         let name = 'CapPT';
         return (
             <>
-                <div>
+                <div className='first'>
                     <input value={this.state.name} type='text'
                         onChange={(event) => this.handleOnChangeName(event)}
                     >
@@ -30,8 +34,12 @@ class MyComponent extends React.Component {
 
                 </div>
 
-                <div>
+                <div className='second'>
                     My youtube channel : this.state.channel
+                </div>
+
+                <div className='third'>
+                    <button onClick={() => this.handleClickButton()}>Click me</button>
                 </div>
             </>
         )
