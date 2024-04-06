@@ -3,11 +3,13 @@ import './Nav.scss'
 import {
     Link, NavLink
 } from "react-router-dom";
+
+
 class Nav extends React.Component {
 
     render() {
         return (
-            <div class="topnav">
+            <div className="topnav">
 
                 <NavLink to="/" activeClassName="active" exact={true}>
                     Home
