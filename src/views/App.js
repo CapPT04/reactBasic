@@ -8,12 +8,13 @@ import Nav from './Nav/Nav.js';
 import Home from './Example/Home.js';
 import {
   BrowserRouter,
-  Switch,
-  Route,
+  // Switch,
+  // Route,
   Link
 } from "react-router-dom";
 import ListUser from './Users/ListUser.js';
 import DetailUser from './Users/DetailUser.js';
+import { Route, Switch } from "react-router";
 
 function App() {
   return (
