@@ -12,6 +12,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import ListUser from './Users/ListUser.js';
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
             </Route>
             <Route path="/about">
               <MyComponent />
+            </Route>
+            <Route path="/user">
+              <ListUser />
             </Route>
           </Switch>
 
