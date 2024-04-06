@@ -13,6 +13,7 @@ import {
   Link
 } from "react-router-dom";
 import ListUser from './Users/ListUser.js';
+import DetailUser from './Users/DetailUser.js';
 
 function App() {
   return (
@@ -35,8 +36,11 @@ function App() {
             <Route path="/about">
               <MyComponent />
             </Route>
-            <Route path="/user">
+            <Route path="/user" exact>
               <ListUser />
+            </Route>
+            <Route path="/user/:id">
+              <DetailUser />
             </Route>
           </Switch>
 
